@@ -1,12 +1,15 @@
 const URL = "https://jsonplaceholder.typicode.com/users"
 
+// https://mebee.info/2020/10/15/post-20763/
+
 // axios.get(URL)
 //   .then(res => console.log(res.data))
 //   .catch(err => console.error(err))
 //   .finally(res => console.log('finally'))
 
 let responseJson = async () => {
-  const users = await axios.get(URL)
+  // const users = await axios.get(URL)
+  const users = await axios.get("https://jsonplaceholder.typicode.com/users")
 
   users.data.forEach(user => {
     console.log(user.name)
