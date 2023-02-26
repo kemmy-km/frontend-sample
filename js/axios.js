@@ -8,8 +8,7 @@ const URL = "https://jsonplaceholder.typicode.com/users"
 //   .finally(res => console.log('finally'))
 
 let responseJson = async () => {
-  // const users = await axios.get(URL)
-  const users = await axios.get("https://jsonplaceholder.typicode.com/users")
+  const users = await axios.get(URL)
 
   users.data.forEach(user => {
     console.log(user.name)
