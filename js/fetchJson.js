@@ -1,12 +1,12 @@
 // https://jsonplaceholder.typicode.com/users
-
 const URL = "https://jsonplaceholder.typicode.com/users"
 
-//fetch() は Promise を返す（返り値を変数に代入する場合）
-const promiseResult = fetch(URL);
 
 let dataDom = document.querySelector(".dataDom")
 let jsonDataSample = "test"
+
+// fetch() は Promise を返す（返り値を変数に代入する場合）
+// const promiseResult = fetch(URL)
 
 //fetch() のレスポンス（リクエストの結果）を then() メソッドで処理
 // promiseResult.then((response) => {
@@ -22,11 +22,6 @@ let jsonDataSample = "test"
 /**
  * async / awaitを使用する場合
  */
-// async function resJson() {
-//   const response = await fetch(URL)
-//   const users = await response.json()
-//   console.log(users)
-// }
 let responseJson = async () => {
   const response = await fetch(URL)
   const users = await response.json()
