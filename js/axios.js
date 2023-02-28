@@ -6,7 +6,9 @@ const URL = "https://jsonplaceholder.typicode.com/users"
 //   .then(res => console.log(res.data))
 //   .catch(err => console.error(err))
 //   .finally(res => console.log('finally'))
-
+/**
+ * async / awaitを使用する場合
+ */
 let responseJson = async () => {
   const users = await axios.get(URL)
 
