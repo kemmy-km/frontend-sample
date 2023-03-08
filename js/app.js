@@ -14,6 +14,14 @@ var app = new Vue({
 
   },
   mounted() {
+    alert("mounted")
+  },
 
+  created() {
+    alert("created")
+  },
+
+  beforeDestroy() {
+    alert("beforeDestroy")
   },
 })
